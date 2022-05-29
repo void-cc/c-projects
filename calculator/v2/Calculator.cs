@@ -98,11 +98,11 @@ namespace Calculator
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing.
+                //Option to run another calculation or quit the app
                 Console.Write("Press 'x' and Enter to close the app, or press Enter to continue: ");
                 if (Console.ReadLine() == "x") endApp = true;
 
-                Console.WriteLine("\n");
+                Console.WriteLine("\n"); //Just for some space between loops
             }
             return;
         }

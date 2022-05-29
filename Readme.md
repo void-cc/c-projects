@@ -1,7 +1,3 @@
-echo "# c-projects" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/chloecornelissen/c-projects.git
-git push -u origin main
+Hi there, 
+
+Here you can find all the c# projects I have been working on lately

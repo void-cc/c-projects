@@ -43,13 +43,14 @@ namespace Calculator
         static void Main(string[] args)
         {
             bool endApp = false;
+            int val3 = 0;
             // Display title as the C# console calculator app.
             Console.WriteLine("Calculator\r");
             Console.WriteLine("----------\n");
-
             while (!endApp)
             {
                 // Declare variables and set to empty.
+
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
@@ -91,7 +92,7 @@ namespace Calculator
                     result = Calculator.DoOperation(cleanval1, cleanval2, op);
                     if (double.IsNaN(result))
                     {
-                        Console.WriteLine("This operation will result in a mathematical error. Please try again\n");
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
                     }
                     else Console.WriteLine("Your result: {0:0.##}\n", result);
                 }
@@ -103,9 +104,11 @@ namespace Calculator
                 Console.WriteLine("------------------------\n");
 
                 // Wait for the user to respond before closing.
+                Console.Write("Made by @ChloeCornelissen\n");
                 Console.Write("Press 'x' and Enter to close the app, or press Enter to continue: ");
                 if (Console.ReadLine() == "x") endApp = true;
-
+                val3++;
+                Console.WriteLine($"Total calculations {val3}");
                 Console.WriteLine("\n");
             }
             return;
